@@ -1,26 +1,15 @@
 package com.example.user.kotlintodoapp
 
 import android.app.Dialog
-import android.content.DialogInterface
-import android.nfc.Tag
 import android.os.Bundle
-import android.provider.ContactsContract
-import android.support.design.widget.FloatingActionButton
-import android.support.design.widget.Snackbar
 import android.support.v7.app.AlertDialog
 import android.support.v7.app.AppCompatActivity
-import android.support.v7.widget.Toolbar
-import android.util.Log
 import android.view.View
-import android.view.Menu
-import android.view.MenuItem
 import android.widget.ArrayAdapter
 import android.widget.EditText
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.item_todo.*
 import kotlinx.android.synthetic.main.item_todo.view.*
-import ninja.sakib.pultusorm.core.PultusORM
 
 class MainActivity : AppCompatActivity() {
 
@@ -45,7 +34,7 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this,"Mistake happened", Toast.LENGTH_LONG).show()
         }
     }
-
+    
     override fun onCreateDialog(id: Int): Dialog? {
         //TODO: Replace with Dialog
         when(id){
